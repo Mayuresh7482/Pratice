@@ -16,7 +16,7 @@ public class FibonacciUsingRecursion {
     void printFib(int n) {
         if (n >= 1) {
             c = a + b;
-            System.out.println(" -> " + c + " ");
+            System.out.print(" -> " + c);
             a = b;
             b = c;
             printFib(n - 1);
