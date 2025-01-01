@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+/* Flex  */
+
+        /* .outer{
+            background-color: cadetblue;
+            border: 2px solid black;
+            height: 200px;
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .inner{
+            background-color: chocolate;
+            border: 2px solid black;
+            height: 100px;
+            width: 100px;
+        } */
+
+/*  Loader Spin Animation  */
+        #loader {
+            height: 200px;
+            width: 200px;
+            border: 20px solid #ffe66d;
+            border-top: 20px solid cyan;
+            border-radius: 50%;
+            animation: spinAnimie 2s ease-in-out 0s infinite normal;
+        }
+
+        @keyframes spinAnimie {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- flex -->
+    <!-- <div class="outer">
+        <div class="inner"></div>
+    </div> -->
+
+<!-- Loader Spin -->
+    <div id="loader"></div>
+</body>
+
+</html>
