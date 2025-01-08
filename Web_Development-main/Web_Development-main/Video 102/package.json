@@ -19,6 +19,7 @@
     "tailwindcss": "^3.4.1"
   },
   "dependencies": {
+    "design-the-layout": "file:",
     "vite": "^5.0.12"
   }
 }

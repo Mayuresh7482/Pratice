@@ -15,7 +15,8 @@
     "express": "^4.18.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-hook-form": "^7.50.1"
+    "react-hook-form": "^7.50.1",
+    "video-119": "file:"
   },
   "devDependencies": {
     "@types/react": "^18.2.55",
