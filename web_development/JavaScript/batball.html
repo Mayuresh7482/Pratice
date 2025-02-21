@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bat Ball Stump Game</title>
+    <style>
+        div {
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Bat Ball Stump Game</h1>
+        <button onclick="userchoice()">Bat</button>
+        <button onclick="userchoice()">Ball</button>
+        <button onclick="userchoice()">Stump</button>
+    </div>
+    <script>
+        function userchoice() {
+            var user = event.target.innerHTML;
+            var computer = Math.random();
+            if (computer < 0.34) {
+                computer = "Bat";
+            } else if (computer <= 0.67) {
+                computer = "Ball";
+            } else {
+                computer = "Stump";
+            }
+            var result = compare(user, computer);
+            alert("User: " + user + "\nComputer: " + computer + "\nResult: " + result);
+        }
+        function compare(user, computer) {
+            if (user === computer) {
+                return "It's a tie!";
+            }
+            if (user === "Bat") {
+                if (computer === "Ball") {
+                    return "User wins!";
+                } else {
+                    return "Computer wins!";
+                }
+            }
+            if (user === "Ball") {
+                if (computer === "Stump") {
+                    return "User wins!";
+                } else {
+                    return "Computer wins!";
+                }
+            }
+            if (user === "Stump") {
+                if (computer === "Bat") {
+                    return "User wins!";
+                } else {
+                    return "Computer wins!";
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
